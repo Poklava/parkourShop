@@ -9,47 +9,47 @@ local textAreaIds = {
 }
 local items = {
     [1] = {
-        {img = "17ee0479ad8.png", x = 170, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0483361.png", x = 280 + 80, y = 120, scaleX = 1, scaleY = 1}, 
-        {img = "17ee048cb5f.png", x = 330 + 80 * 2, y = 125, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0491764.png", x = 165, y = 140 + 60, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0496361.png", x = 275 + 80, y = 150 + 60, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04a945f.png", x = 340 + 80 * 2, y = 165 + 60, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0520164.png", x = 185, y = 140, scaleX = 1, scaleY = 1}
+        {img = "17ee0479ad8.png", x = 170, y = 130, scale = 1}, 
+        {img = "17ee0483361.png", x = 280 + 80, y = 120, scale = 1}, 
+        {img = "17ee048cb5f.png", x = 330 + 80 * 2, y = 125, scale = 1}, 
+        {img = "17ee0491764.png", x = 165, y = 140 + 60, scale = 1}, 
+        {img = "17ee0496361.png", x = 275 + 80, y = 150 + 60, scale = 1}, 
+        {img = "17ee04a945f.png", x = 340 + 80 * 2, y = 165 + 60, scale = 1}, 
+        {img = "17ee0520164.png", x = 185, y = 140, scale = 1}
     },
     [2] = {
-        {img = "17ee049af62.png", x = 180, y = 135, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee049fbb2.png", x = 290 + 80, y = 135, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee04ae061.png", x = 360 + 80 * 2, y = 140, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee04b2c62.png", x = 195, y = 160 + 60, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee04b785f.png", x = 275 + 80, y = 150 + 60, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee04bc460.png", x = 360 + 80 * 2, y = 165 + 60, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee04c5c61.png", x = 185, y = 135, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee04d8c60.png", x = 300 + 80, y = 140, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee04dd863.png", x = 280 + 80 * 2, y = 140, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee04e7061.png", x = 330, y = 140 + 60, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee0503961.png", x = 165 + 80, y = 140 + 60, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee0524d64.png", x = 275 + 80 * 2, y = 140 + 60, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee0487f63.png", x = 340, y = 140, scaleX = 0.6, scaleY = 0.6}, 
-        {img = "17ee047e75f.png", x = 185 + 80, y = 140, scaleX = 0.6, scaleY = 0.6}
+        {img = "17ee049af62.png", x = 180, y = 135, scale = 0.6}, 
+        {img = "17ee049fbb2.png", x = 290 + 80, y = 135, scale = 0.6}, 
+        {img = "17ee04ae061.png", x = 360 + 80 * 2, y = 140, scale = 0.6}, 
+        {img = "17ee04b2c62.png", x = 195, y = 160 + 60, scale = 0.6}, 
+        {img = "17ee04b785f.png", x = 275 + 80, y = 150 + 60, scale = 0.6}, 
+        {img = "17ee04bc460.png", x = 360 + 80 * 2, y = 165 + 60, scale = 0.6}, 
+        {img = "17ee04c5c61.png", x = 185, y = 135, scale = 0.6}, 
+        {img = "17ee04d8c60.png", x = 300 + 80, y = 140, scale = 0.6}, 
+        {img = "17ee04dd863.png", x = 280 + 80 * 2, y = 140, scale = 0.6}, 
+        {img = "17ee04e7061.png", x = 330, y = 140 + 60, scale = 0.6}, 
+        {img = "17ee0503961.png", x = 165 + 80, y = 140 + 60, scale = 0.6}, 
+        {img = "17ee0524d64.png", x = 275 + 80 * 2, y = 140 + 60, scale = 0.6}, 
+        {img = "17ee0487f63.png", x = 340, y = 140, scale = 0.6}, 
+        {img = "17ee047e75f.png", x = 185 + 80, y = 140, scale = 0.6}
     },
     [3] = {
-        {img = "17ee04c1063.png", x = 180, y = 140, scaleX = 1, scaleY = 1,},
-        {img = "17ee04ca860.png", x = 180 + 80, y = 140, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04cf463.png", x = 180 + 80 * 2, y = 140, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04e2460.png", x = 180, y = 140 + 60, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04ebc63.png", x = 180 + 80, y = 140 + 60, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04f0861.png", x = 180 + 80 * 2, y = 140 + 60, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04f5461.png", x = 180, y = 140, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04fa16d.png", x = 180 + 80, y = 140, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04fed61.png", x = 180  + 80 * 2, y = 140, scaleX = 1, scaleY = 1}, 
-        {img = "17ee050d162.png", x = 180, y = 140 + 60, scaleX = 1, scaleY = 1}
+        {img = "17ee04c1063.png", x = 180, y = 140, scale = 1},
+        {img = "17ee04ca860.png", x = 180 + 80, y = 140, scale = 1}, 
+        {img = "17ee04cf463.png", x = 180 + 80 * 2, y = 140, scale = 1}, 
+        {img = "17ee04e2460.png", x = 180, y = 140 + 60, scale = 1}, 
+        {img = "17ee04ebc63.png", x = 180 + 80, y = 140 + 60, scale = 1}, 
+        {img = "17ee04f0861.png", x = 180 + 80 * 2, y = 140 + 60, scale = 1}, 
+        {img = "17ee04f5461.png", x = 180, y = 140, scale = 1}, 
+        {img = "17ee04fa16d.png", x = 180 + 80, y = 140, scale = 1}, 
+        {img = "17ee04fed61.png", x = 180  + 80 * 2, y = 140, scale = 1}, 
+        {img = "17ee050d162.png", x = 180, y = 140 + 60, scale = 1}
     },
     [4] = {
-        {img = "17ee0508560.png", x = 180, y = 140, scaleX = 1, scaleY = 1}, 
-        {img = "17ee051b563.png", x = 180 + 80, y = 140, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0529961.png", x = 180  + 80 * 2, y = 140, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0511d62.png", x = 180, y = 140 + 60, scaleX = 1, scaleY = 1}
+        {img = "17ee0508560.png", x = 180, y = 140, scale = 1}, 
+        {img = "17ee051b563.png", x = 180 + 80, y = 140, scale = 1}, 
+        {img = "17ee0529961.png", x = 180  + 80 * 2, y = 140, scale = 1}, 
+        {img = "17ee0511d62.png", x = 180, y = 140 + 60, scale = 1}
     }
 }
 
@@ -117,7 +117,7 @@ displayShop = function(name)
 
     local textAreaX, textAreaY = 210, 121
     for i = (players[name].shopPage - 1)* 6 + 1, players[name].shopPage * 6 > #items[players[name].shopTab] and #items[players[name].shopTab] or players[name].shopPage * 6 do
-        players[name].tempImgs[#players[name].tempImgs + 1] = tfm.exec.addImage(items[players[name].shopTab][i].img, "&2", items[players[name].shopTab][i].x, items[players[name].shopTab][i].y, name, items[players[name].shopTab][i].scaleX, items[players[name].shopTab][i].scaleY, 0, 1, 0, 0, 0)
+        players[name].tempImgs[#players[name].tempImgs + 1] = tfm.exec.addImage(items[players[name].shopTab][i].img, "&2", items[players[name].shopTab][i].x, items[players[name].shopTab][i].y, name, items[players[name].shopTab][i].scale, items[players[name].shopTab][i].scale, 0, 1, 0, 0, 0)
         textAreaIds[#textAreaIds + 1] = #textAreaIds + 1
         ui.addTextArea(math.random(100,9999), "", nil, textAreaX, textAreaY, 79, 85, 0x253942, 0x142529, 1, true)
         ui.addTextArea(math.random(100,9999), "AL GİTSİN", nil, textAreaX, textAreaY + 70, 80, 20, 0x253942, 0x142529, 1, true)    
