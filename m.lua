@@ -120,7 +120,7 @@ displayShop = function(name)
         players[name].tempImgs[#players[name].tempImgs + 1] = tfm.exec.addImage(items[players[name].shopTab][i].img, "&2", items[players[name].shopTab][i].x, items[players[name].shopTab][i].y, name, items[players[name].shopTab][i].scale, items[players[name].shopTab][i].scale, 0, 1, 0, 0, 0)
         textAreaIds[#textAreaIds + 1] = #textAreaIds + 1
         ui.addTextArea(math.random(100,9999), "", nil, textAreaX, textAreaY, 79, 85, 0x253942, 0x142529, 1, true)
-        ui.addTextArea(math.random(100,9999), "AL GİTSİN", nil, textAreaX, textAreaY + 70, 80, 20, 0x253942, 0x142529, 1, true)    
+        ui.addTextArea(math.random(100,9999), "<a href='event:shopButton" .. i .. "'>AL GİTSİN</a>", nil, textAreaX, textAreaY + 70, 80, 20, 0x253942, 0x142529, 1, true)    
         textAreaX = textAreaX + 150
         if textAreaX == 660 then
             textAreaX = 210
