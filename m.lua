@@ -74,7 +74,7 @@ eventKeyboard = function(name, key)
 end
 
 eventTextAreaCallback = function(id, name, event)
-    for i = 1, 4 do
+    for i = 1, #items do
         if event == "shopTab" .. i then
             players[name].shopTab = i
             players[name].shopPage = 1
@@ -111,22 +111,11 @@ displayShop = function(name)
 
     local tabBoxX = {165, 290, 440, 540}
 
-    for i = 1, 4 do
+    for i = 1, #items do
         players[name].tempImgs[i] = tfm.exec.addImage(players[name].shopTab == i and "17272e2e9bd.png" or "17272e306ca.png", ":1", tabBoxX[i], 102, name, 1, 1, 0, 1, 0, 0)
     end
 
-
-    local startIdx, stopIdx
-
-    if players[name].shopPage * 6 > #items[players[name].shopTab] then
-        stopIdx = #items[players[name].shopTab]
-    elseif players[name].shopPage == 1 then
-        stopIdx = 6
-    else
-        stopIdx = players[name].shopPage * 6
-    end
-
-    for i = (players[name].shopPage - 1)* 6 + 1, stopIdx do
+    for i = (players[name].shopPage - 1)* 6 + 1, players[name].shopPage * 6 > #items[players[name].shopTab] and #items[players[name].shopTab] or players[name].shopPage * 6 do
         players[name].tempImgs[#players[name].tempImgs + 1] = tfm.exec.addImage(items[players[name].shopTab][i].img, ":2", items[players[name].shopTab][i].x, items[players[name].shopTab][i].y, name, items[players[name].shopTab][i].scaleX, items[players[name].shopTab][i].scaleY, 0, 1, 0, 0, 0)
     end
 
@@ -146,7 +135,7 @@ removeShop = function (name)
     for i in next, textAreaIds do
         ui.removeTextArea(textAreaIds[i], name)
     end
-    for i in next, players[name].tempImgs do
+    for i = 1, #players[name].tempImgs do
         tfm.exec.removeImage(players[name].tempImgs[i])
     end
     players[name].tempImgs = {}
