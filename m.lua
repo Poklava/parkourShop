@@ -9,49 +9,50 @@ local textAreaIds = {
 }
 local items = {
     [1] = {
-        {img = "17ee0479ad8.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0483361.png", x = 180 + 80, y = 130, scaleX = 1, scaleY = 1}}, 
-        {img = "17ee048cb5f.png", x = 180 + 80 * 2, y = 130, scaleX = 1, scaleY = 1}}, 
-        {img = "17ee0491764.png", x = 180, y = 130 +, scaleX = 1, scaleY = 1}}, 
-        {img = "17ee0496361.png", x = 180 + 80, y = 130, scaleX = 1, scaleY = 1}}, 
-        {img = "17ee04a945f.png", x = 180 + 80 * 2, y = 130, scaleX = 1, scaleY = 1}}, 
-        {img = "17ee0520164.png", x = 180, y = 130, scaleX = 1, scaleY = 1}}
+        {img = "17ee0479ad8.png", x = 230, y = 130, scaleX = 1, scaleY = 1}, 
+        {img = "17ee0483361.png", x = 260 + 80, y = 120, scaleX = 1, scaleY = 1}, 
+        {img = "17ee048cb5f.png", x = 230 + 80 * 2, y = 120, scaleX = 1, scaleY = 1}, 
+        {img = "17ee0491764.png", x = 230, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee0496361.png", x = 240 + 80, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04a945f.png", x = 250 + 80 * 2, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee0520164.png", x = 230, y = 140, scaleX = 1, scaleY = 1}
     },
     [2] = {
-        {img = "17ee049af62.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee049fbb2.png", x = 180 + 80, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04ae061.png", x = 180 + 80 * 2, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04b2c62.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04b785f.png", x = 180 + 80, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04bc460.png", x = 180 + 80 * 2, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04c5c61.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04d8c60.png", x = 180 + 80, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04dd863.png", x = 180 + 80 * 2, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04e7061.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0503961.png", x = 180 + 80, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0524d64.png", x = 180 + 80 * 2, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0487f63.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee047e75f.png", x = 180 + 80, y = 130, scaleX = 1, scaleY = 1}
+        {img = "17ee049af62.png", x = 180, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee049fbb2.png", x = 180 + 80, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04ae061.png", x = 180 + 80 * 2, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04b2c62.png", x = 180, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04b785f.png", x = 180 + 80, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04bc460.png", x = 180 + 80 * 2, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04c5c61.png", x = 180, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04d8c60.png", x = 180 + 80, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04dd863.png", x = 180 + 80 * 2, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04e7061.png", x = 180, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee0503961.png", x = 180 + 80, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee0524d64.png", x = 180 + 80 * 2, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee0487f63.png", x = 180, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee047e75f.png", x = 180 + 80, y = 140, scaleX = 1, scaleY = 1}
     },
     [3] = {
-        {img = "17ee04c1063.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04ca860.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04cf463.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04e2460.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04ebc63.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04f0861.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04f5461.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04fa16d.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee04fed61.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee050d162.png", x = 180, y = 130, scaleX = 1, scaleY = 1}
+        {img = "17ee04c1063.png", x = 180, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04ca860.png", x = 180 + 80, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04cf463.png", x = 180 + 80 * 2, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04e2460.png", x = 180, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04ebc63.png", x = 180 + 80, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04f0861.png", x = 180 + 80 * 2, y = 140 + 60, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04f5461.png", x = 180, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04fa16d.png", x = 180 + 80, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee04fed61.png", x = 180  + 80 * 2, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee050d162.png", x = 180, y = 140 + 60, scaleX = 1, scaleY = 1}
     },
     [4] = {
-        {img = "17ee0508560.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee051b563.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0529961.png", x = 180, y = 130, scaleX = 1, scaleY = 1}, 
-        {img = "17ee0511d62.png", x = 180, y = 130, scaleX = 1, scaleY = 1}
+        {img = "17ee0508560.png", x = 180, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee051b563.png", x = 180 + 80, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee0529961.png", x = 180  + 80 * 2, y = 140, scaleX = 1, scaleY = 1}, 
+        {img = "17ee0511d62.png", x = 180, y = 140 + 60, scaleX = 1, scaleY = 1}
     }
 }
+
 
 for name in next, tfm.get.room.playerList do
     players[name] = {
@@ -114,34 +115,24 @@ displayShop = function(name)
         players[name].tempImgs[i] = tfm.exec.addImage(players[name].shopTab == i and "17272e2e9bd.png" or "17272e306ca.png", ":1", tabBoxX[i], 102, name, 1, 1, 0, 1, 0, 0)
     end
 
-    local imgX, imgY = 180, 130
+
     local startIdx, stopIdx
-    if players[name].shopPage == 1 then
-        startIdx = 1
-    else
-        startIdx = players[name].shopPage * 6 + 1
-    end
+
     if players[name].shopPage * 6 > #items[players[name].shopTab] then
         stopIdx = #items[players[name].shopTab]
+    elseif players[name].shopPage == 1 then
+        stopIdx = 6
     else
-        stopIdx = (players[name].shopPage + 1) * 6
+        stopIdx = players[name].shopPage * 6
     end
-    for i = startIdx, stopIdx do
-        players[name].tempImgs[#players[name].tempImgs + 1] = tfm.exec.addImage(items[players[name].shopTab][i], ":2", imgX, imgY, name, 1, 1, 0, 1, 0, 0, 0)
-        imgX = imgX + 80
-        if imgX == 360 then
-            imgX = 180
-            imgY = imgY + 80
-        end
+
+    for i = (players[name].shopPage - 1)* 6 + 1, stopIdx do
+        players[name].tempImgs[#players[name].tempImgs + 1] = tfm.exec.addImage(items[players[name].shopTab][i].img, ":2", items[players[name].shopTab][i].x, items[players[name].shopTab][i].y, name, items[players[name].shopTab][i].scaleX, items[players[name].shopTab][i].scaleY, 0, 1, 0, 0, 0)
     end
 
     local pages = ""
     for i = 1, math.ceil(#items[players[name].shopTab] / 6) do
-        if i == 1 then
-            pages = pages .. "<a href='event:shopPage" .. i .. "'>" .. i .. "</a>"
-        else
-            pages = pages .. "  -  <a href='event:shopPage" .. i .. "'>" .. i .. "</a>"
-        end
+        pages = i == 1 and pages .. "<a href='event:shopPage" .. i .. "'>" .. i .. "</a>" or pages .. "  -  <a href='event:shopPage" .. i .. "'>" .. i .. "</a>"
     end
     ui.addTextArea(textAreaIds.shopPages, "<p align='center'>" .. pages .. "</p>", name, 150, 315, 500, 25, 0xf00000,
         0xf00000, 0, true)
@@ -158,5 +149,6 @@ removeShop = function (name)
     for i in next, players[name].tempImgs do
         tfm.exec.removeImage(players[name].tempImgs[i])
     end
+    players[name].tempImgs = {}
     players[name].shopOpened = false
 end
