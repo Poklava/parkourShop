@@ -84,7 +84,7 @@ eventTextAreaCallback = function(id, name, event)
     end
     for i = 1, #items[players[name].shopTab] do
         if event == "shopButton" .. i then
-            if players[name].inventory[ items[players[name].shopTab][i].id] then
+            if players[name].inventory[items[players[name].shopTab][i].id] then
                 return
             else
                 players[name].inventory[items[players[name].shopTab][i].id] = true
@@ -111,19 +111,14 @@ displayShop = function(name)
     ui.addTextArea(textAreaIds.shopCloseButton, "<a href='event:shopCloseButton'>  </a>", name, 695, 43, 13, 13,
         0xf00000, 0xf00000, 0, true)
 
-    ui.addTextArea(textAreaIds.shopTab1, "<a href='event:shopTab1'>    Küçük Kutu</a>", name, 165, 80, 100, 20,
+    for i, j in next, {["shopTab1"] = {"Küçük Kutu", 165}, ["shopTab2"] = {"Büyük Kutu", 290}, ["shopTab3"] = {"Balon", 440}, ["shopTab4"] = {"Trambolin", 540}} do
+        ui.addTextArea(textAreaIds[i], "<a href='event:" .. i .. "'>    " .. j[1] .. "</a>", name, j[2], 80, 100, 20,
         0xf00000, 0xf00000, 0, true)
-    ui.addTextArea(textAreaIds.shopTab2, "<a href='event:shopTab2'>    Büyük Kutu</a>", name, 290, 80, 100, 20, 0xf00000,
-        0xf00000, 0, true)
-    ui.addTextArea(textAreaIds.shopTab3, "<a href='event:shopTab3'>    Balon</a>", name, 440, 80, 100, 20, 0xf00000,
-        0xf00000, 0, true)
-    ui.addTextArea(textAreaIds.shopTab4, "<a href='event:shopTab4'>    Trambolin</a>", name, 540, 80, 100, 20, 0xf00000,
-        0xf00000, 0, true)
+    end
 
-    local tabBoxX = {165, 290, 440, 540}
-
+    local tabAreaX = {165, 290, 440, 540}
     for i = 1, #items do
-        players[name].tempImgs[i] = tfm.exec.addImage(players[name].shopTab == i and "17272e2e9bd.png" or "17272e306ca.png", ":1", tabBoxX[i], 82, name, 1, 1, 0, 1, 0, 0)
+        players[name].tempImgs[i] = tfm.exec.addImage(players[name].shopTab == i and "17272e2e9bd.png" or "17272e306ca.png", ":1", tabAreaX[i], 82, name, 1, 1, 0, 1, 0, 0)
     end
 
     local textAreaX, textAreaY = 210, 121
@@ -131,9 +126,8 @@ displayShop = function(name)
         players[name].tempImgs[#players[name].tempImgs + 1] = tfm.exec.addImage(items[players[name].shopTab][i].img, "&2", items[players[name].shopTab][i].x, items[players[name].shopTab][i].y, name, items[players[name].shopTab][i].scale, items[players[name].shopTab][i].scale, 0, 1, 0, 0, 0)
         textAreaIds[#textAreaIds + 1] = i + 6
         textAreaIds[#textAreaIds + 1] = (i + 6) * 2
-        local isAllowed = players[name].inventory[items[players[name].shopTab][i].id] and "Kullan" or "Al gitsin"
         ui.addTextArea(i + 6, "", name, textAreaX, textAreaY, 79, 85, 0x253942, 0x142529, 1, true)
-        ui.addTextArea((i + 6) * 2 , "<a href='event:shopButton" .. i .. "'>" .. isAllowed .. "</a>", name, textAreaX, textAreaY + 70, 80, 20, 0x253942, 0x142529, 1, true)    
+        ui.addTextArea((i + 6) * 2 , "<p align='center'><a href='event:shopButton" .. i .. "'>" .. (players[name].inventory[items[players[name].shopTab][i].id] and "Kullan" or "Al gitsin") .. "</a></p>", name, textAreaX, textAreaY + 70, 80, 20, 0x253942, 0x142529, 1, true)    
         textAreaX = textAreaX + 150
         if textAreaX == 660 then
             textAreaX = 210
