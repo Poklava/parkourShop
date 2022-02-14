@@ -53,8 +53,7 @@ local items = {
     }
 }
 
-
-for name in next, tfm.get.room.playerList do
+eventNewPlayer = function(name)
     players[name] = {
         shopOpened = false,
         inventory = {},
@@ -63,6 +62,10 @@ for name in next, tfm.get.room.playerList do
         tempImgs = {}
     }
     system.bindKeyboard(name, 32, true, true)
+end
+
+for name in next, tfm.get.room.playerList do
+    eventNewPlayer(name)
 end
 
 eventKeyboard = function(name, key)
