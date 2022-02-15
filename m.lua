@@ -43,7 +43,6 @@ local items = {
         {img = "17ee04f5461.png", x = 195, y = 115, scale = 1, id = 2840}, 
         {img = "17ee04fa16d.png", x = 257 + 80, y = 110, scale = 1, id = 2829}, 
         {img = "17ee04fed61.png", x = 335  + 80 * 2, y = 100, scale = 1, id = 2841}, 
-        {img = "17ee050d162.png", x = 169, y = 145 + 60, scale = 1, id = 2837}
     },
     [4] = {
         {img = "17ee0508560.png", x = 490, y = 135, scale = 0.7, id = 703}, 
