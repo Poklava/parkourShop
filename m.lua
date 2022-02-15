@@ -123,7 +123,7 @@ displayShop = function(name)
         0xf00000, 0xf00000, 0, true)
     end
     for i = 1, #items do
-        players[name].tempImgs[i] = tfm.exec.addImage(players[name].shopTab == i and "17272e2e9bd.png" or "17272e306ca.png", ":1", tabAreaX[i], 82, name, 1, 1, 0, 1, 0, 0)
+        players[name].tempImgs[i] = tfm.exec.addImage(players[name].shopTab == i and "17272e2e9bd.png" or "17272e306ca.png", ":1", tabAreaX[i], 81, name, 1, 1, 0, 0.5, 0, 0)
     end
 
     local textAreaX, textAreaY = 150, 121
@@ -131,15 +131,14 @@ displayShop = function(name)
         players[name].tempImgs[#players[name].tempImgs + 1] = tfm.exec.addImage(items[players[name].shopTab][i].img, "&2", items[players[name].shopTab][i].x, items[players[name].shopTab][i].y, name, items[players[name].shopTab][i].scale, items[players[name].shopTab][i].scale, 0, 1, 0, 0, 0)
         textAreaIds[#textAreaIds + 1] = i + 6
         textAreaIds[#textAreaIds + 1] = (i + 6) * 2
-        ui.addTextArea(i + 6, "", name, textAreaX, textAreaY, 79, 85, 0x253942, 0x142529, 0.5, true)
-        ui.addTextArea((i + 6) * 2 , "<p align='center'><a href='event:shopButton" .. i .. "'>" .. (players[name].inventory[items[players[name].shopTab][i].id] and "Kullan" or "BILGI") .. "</a></p>", name, textAreaX, textAreaY + 70, 80, 20, 0x253942, 0x142529, 0.5, true)    
+        ui.addTextArea(i + 6, "", name, textAreaX, textAreaY, 79, 90, 0x3f2c50, 0x000000, 0.5, true)
+        ui.addTextArea((i + 6) * 2 , "<p align='center'><a href='event:shopButton" .. i .. "'>" .. (players[name].inventory[items[players[name].shopTab][i].id] and "Kullan" or "BILGI") .. "</a></p>", name, textAreaX, textAreaY + 70, 80, 20, 0x3f2c50, 0x000000, 0.5, true)    
         textAreaX = textAreaX + 150
         if textAreaX == 600 then
             textAreaX = 150
             textAreaY = textAreaY + 110
         end
     end
-    print(#textAreaIds)
     local pages = ""
     for i = 1, math.ceil(#items[players[name].shopTab] / 6) do
         pages = i == 1 and pages .. "<a href='event:shopPage" .. i .. "'>" .. i .. "</a>" or pages .. "  -  <a href='event:shopPage" .. i .. "'>" .. i .. "</a>"
@@ -156,6 +155,9 @@ removeShop = function (name)
     end
     for i in next, textAreaIds do
         ui.removeTextArea(textAreaIds[i], name)
+    end
+    for i = 1, #textAreaIds do
+        textAreaIds[i] = nil
     end
     for i = 1, #players[name].tempImgs do
         tfm.exec.removeImage(players[name].tempImgs[i])
