@@ -5,16 +5,18 @@ local textAreaIds = {
     shopTab1 = 3,
     shopTab2 = 4,
     shopTab3 = 5,
-    shopTab4 = 6
+    shopTab4 = 6,
+    shopInfo = 7,
+    shopCoin = 8
 }
 local items = {
     [1] = {
         {img = "17ee0479ad8.png", x = 135, y = 120, scale = 1, id = 142}, 
         {img = "17ee0483361.png", x = 215 + 80, y = 110, scale = 1, id = 139}, 
-        {img = "17ee048cb5f.png", x = 265 + 80 * 2, y = 115, scale = 1, id = 109}, 
-        {img = "17ee0491764.png", x = 130, y = 150 + 60, scale = 1, id = 126}, 
-        {img = "17ee0496361.png", x = 215 + 80, y = 160 + 60, scale = 1, id = 140}, 
-        {img = "17ee04a945f.png", x = 280 + 80 * 2, y = 175 + 60, scale = 1, id = 107}, 
+        {img = "17ee048cb5f.png", x = 265 + 80 * 2, y = 115, scale = 1, id = 109},
+        {img = "17ee0491764.png", x = 130, y = 150 + 60, scale = 1, id = 126},
+        {img = "17ee0496361.png", x = 215 + 80, y = 160 + 60, scale = 1, id = 140},
+        {img = "17ee04a945f.png", x = 280 + 80 * 2, y = 175 + 60, scale = 1, id = 107},
         {img = "17ee0520164.png", x = 150, y = 130, scale = 1, id = 122}
     },
     [2] = {
