@@ -43,6 +43,7 @@ local items = {
         {img = "17ee04f5461.png", x = 195, y = 115, scale = 1, id = 2840}, 
         {img = "17ee04fa16d.png", x = 257 + 80, y = 110, scale = 1, id = 2829}, 
         {img = "17ee04fed61.png", x = 335  + 80 * 2, y = 100, scale = 1, id = 2841}, 
+        {img = "17ee050d162.png", x = 169, y = 145 + 60, scale = 1, id = 2837}
     },
     [4] = {
         {img = "17ee0508560.png", x = 490, y = 135, scale = 0.7, id = 703}, 
@@ -123,16 +124,16 @@ displayShop = function(name)
         players[name].tempImgs[i] = tfm.exec.addImage(players[name].shopTab == i and "17272e2e9bd.png" or "17272e306ca.png", ":1", tabAreaX[i], 82, name, 1, 1, 0, 1, 0, 0)
     end
 
-    local textAreaX, textAreaY = 210, 121
+    local textAreaX, textAreaY = 150, 121
     for i = (players[name].shopPage - 1)* 6 + 1, players[name].shopPage * 6 > #items[players[name].shopTab] and #items[players[name].shopTab] or players[name].shopPage * 6 do
         players[name].tempImgs[#players[name].tempImgs + 1] = tfm.exec.addImage(items[players[name].shopTab][i].img, "&2", items[players[name].shopTab][i].x, items[players[name].shopTab][i].y, name, items[players[name].shopTab][i].scale, items[players[name].shopTab][i].scale, 0, 1, 0, 0, 0)
         textAreaIds[#textAreaIds + 1] = i + 6
         textAreaIds[#textAreaIds + 1] = (i + 6) * 2
         ui.addTextArea(i + 6, "", name, textAreaX, textAreaY, 79, 85, 0x253942, 0x142529, 1, true)
-        ui.addTextArea((i + 6) * 2 , "<p align='center'><a href='event:shopButton" .. i .. "'>" .. (players[name].inventory[items[players[name].shopTab][i].id] and "Kullan" or "Al gitsin") .. "</a></p>", name, textAreaX, textAreaY + 70, 80, 20, 0x253942, 0x142529, 1, true)    
+        ui.addTextArea((i + 6) * 2 , "<p align='center'><a href='event:shopButton" .. i .. "'>" .. (players[name].inventory[items[players[name].shopTab][i].id] and "Kullan" or "BILGI") .. "</a></p>", name, textAreaX, textAreaY + 70, 80, 20, 0x253942, 0x142529, 1, true)    
         textAreaX = textAreaX + 150
-        if textAreaX == 660 then
-            textAreaX = 210
+        if textAreaX == 600 then
+            textAreaX = 150
             textAreaY = textAreaY + 110
         end
     end
