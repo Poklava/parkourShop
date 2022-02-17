@@ -102,7 +102,7 @@ eventTextAreaCallback = function(id, name, event)
             if players[name].inventory[items[players[name].shopTab][i].id] then
                 return
             else
-                ui.addTextArea(textAreaIds.shopInfo, "<p align='center'><font size='25'><font color='#ffff00'>\n" .. items[players[name].shopTab][i].price .. "</font></font></p>", name, 570, 155, 115, 115, 0x3f2c50, 0x000000, 0.5, true)
+                ui.addTextArea(textAreaIds.shopInfo, "<p align='center'><font size='25'><font color='#ffff00'>" .. items[players[name].shopTab][i].price .. "</font></font></p>", name, 570, 200, 115, 70, 0x3f2c50, 0x000000, 0.5, true)
                 ui.addTextArea(textAreaIds.shopBuy, "<p align='center'><a href='event:buyItem" .. i .. "'>SATIN AL</a></p>", name, 570, 250, 115, 20, 0x3f2c50, 0x000000, 0.5, true)
             end
         elseif event == "buyItem" .. i then
