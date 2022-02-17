@@ -12,49 +12,51 @@ local textAreaIds = {
 }
 local items = {
     [1] = {
-        {img = "17ee0479ad8.png", x = 135, y = 120, scale = 1, id = 142, price = 1}, 
-        {img = "17ee0483361.png", x = 215 + 80, y = 110, scale = 1, id = 139, price = 2}, 
-        {img = "17ee048cb5f.png", x = 265 + 80 * 2, y = 115, scale = 1, id = 109, price = 3},
-        {img = "17ee0491764.png", x = 130, y = 150 + 60, scale = 1, id = 126, price = 4},
-        {img = "17ee0496361.png", x = 215 + 80, y = 160 + 60, scale = 1, id = 140, price = 5},
-        {img = "17ee04a945f.png", x = 275 + 80 * 2, y = 175 + 60, scale = 1, id = 107, price = 6},
-        {img = "17ee0520164.png", x = 150, y = 130, scale = 1, id = 122, price = 7}
+        {img = "17ee0520164.png", x = 150, y = 125, scale = 1, id = 142, price = 500}, 
+        {img = "17ee04a945f.png", x = 205 + 80, y = 120, scale = 1, id = 139, price = 750}, 
+        {img = "17ee0479ad8.png", x = 275 + 80 * 2, y = 115, scale = 1, id = 109, price = 1000},
+        {img = "17ee048cb5f.png", x = 125, y = 165 + 60, scale = 1, id = 126, price = 1250},
+        {img = "17ee0483361.png", x = 215 + 80, y = 160 + 60, scale = 1, id = 140, price = 1500},
+        {img = "17ee0496361.png", x = 283 + 80 * 2, y = 160 + 60, scale = 1, id = 107, price = 1750},
+        {img = "17ee0491764.png", x = 130, y = 100, scale = 1, id = 122, price = 2000}
     },
     [2] = {
-        {img = "17ee049af62.png", x = 145, y = 120, scale = 0.6, id = 212, price = 8}, 
-        {img = "17ee049fbb2.png", x = 225 + 80, y = 120, scale = 0.6, id = 222, price = 9}, 
-        {img = "17ee04ae061.png", x = 290 + 80 * 2, y = 125, scale = 0.6, id = 224, price = 10}, 
-        {img = "17ee04b2c62.png", x = 157, y = 165 + 60, scale = 0.6, id = 219, price = 11}, 
-        {img = "17ee04b785f.png", x = 215 + 80, y = 157 + 60, scale = 0.6, id = 230, price = 12}, 
-        {img = "17ee04bc460.png", x = 285 + 80 * 2, y = 173 + 60, scale = 0.6, id = 241, price = 13}, 
-        {img = "17ee04c5c61.png", x = 150, y = 115, scale = 0.6, id = 233, price = 14}, 
-        {img = "17ee04d8c60.png", x = 220 + 80, y = 117, scale = 0.6, id = 244, price = 15}, 
-        {img = "17ee04dd863.png", x = 295 + 80 * 2, y = 120, scale = 0.6, id = 246, price = 16}, 
-        {img = "17ee04e7061.png", x = 300, y = 175 + 60, scale = 0.6, id = 240, price = 17}, 
-        {img = "17ee0503961.png", x = 60 + 80, y = 170 + 60, scale = 0.6, id = 248, price = 18}, 
-        {img = "17ee0524d64.png", x = 285 + 80 * 2, y = 170 + 60, scale = 0.6, id = 243, price = 19}, 
-        {img = "17ee0487f63.png", x = 300, y = 113, scale = 0.6, id = 235, price = 20}, 
-        {img = "17ee047e75f.png", x = 73 + 80, y = 127, scale = 0.6, id = 226, price = 21}
+        {img = "17ee0487f63.png", x = 150, y = 110, scale = 0.6, id = 212, price = 1000}, 
+        {img = "17ee04dd863.png", x = 225 + 80, y = 120, scale = 0.6, id = 222, price = 1200}, 
+        {img = "17ee04ae061.png", x = 290 + 80 * 2, y = 125, scale = 0.6, id = 224, price = 1400}, 
+        {img = "17ee047e75f.png", x = 150, y = 175 + 60, scale = 0.6, id = 219, price = 1600}, 
+        {img = "17ee04c5c61.png", x = 220 + 80, y = 165 + 60, scale = 0.6, id = 230, price = 1800}, 
+        {img = "17ee0524d64.png", x = 285 + 80 * 2, y = 173 + 60, scale = 0.6, id = 241, price = 2000}, 
+        {img = "17ee049fbb2.png", x = 155, y = 120, scale = 0.6, id = 233, price = 2200}, 
+        {img = "17ee049af62.png", x = 215 + 80, y = 120, scale = 0.6, id = 244, price = 2400}, 
+        {img = "17ee04b2c62.png", x = 299 + 80 * 2, y = 115, scale = 0.6, id = 246, price = 2600}, 
+        {img = "17ee04bc460.png", x = 295, y = 173 + 60, scale = 0.6, id = 240, price = 2800}, 
+        {img = "17ee04d8c60.png", x = 70 + 80, y = 170 + 60, scale = 0.6, id = 248, price = 3000}, 
+        {img = "17ee04b785f.png", x = 285 + 80 * 2, y = 159 + 60, scale = 0.6, id = 243, price = 3200}, 
+        {img = "17ee04e7061.png", x = 70 + 80, y = 127, scale = 0.6, id = 226, price = 3400},
+        {img = "17ee0503961.png", x = 292, y = 120, scale = 0.6, id = 235, price = 3600},
+        
     },
     [3] = {
-        {img = "17ee04c1063.png", x = 148, y = 110, scale = 0.8, id = 2818, price = 22},
-        {img = "17ee04ca860.png", x = 215 + 80, y = 120, scale = 1, id = 2877, price = 23}, 
-        {img = "17ee04cf463.png", x = 280 + 80 * 2, y = 113, scale = 1, id = 2825, price = 24}, 
-        {img = "17ee04e2460.png", x = 145, y = 160 + 60, scale = 1, id = 2801, price = 25}, 
-        {img = "17ee04ebc63.png", x = 200 + 80, y = 155 + 60, scale = 1, id = 2819, price = 26}, 
-        {img = "17ee04f0861.png", x = 275 + 80 * 2, y = 153 + 60, scale = 1, id = 2832, price = 27}, 
-        {img = "17ee04f5461.png", x = 135, y = 115, scale = 1, id = 2840, price = 28}, 
-        {img = "17ee04fa16d.png", x = 197 + 80, y = 110, scale = 1, id = 2829, price = 29}, 
-        {img = "17ee04fed61.png", x = 275  + 80 * 2, y = 100, scale = 1, id = 2841, price = 30}, 
-        {img = "17ee050d162.png", x = 109, y = 145 + 60, scale = 1, id = 2837, price = 31}
+        {img = "17ee04ebc63.png", x = 140, y = 115, scale = 0.8, id = 2818, price = 500},
+        {img = "17ee04ca860.png", x = 215 + 80, y = 120, scale = 1, id = 2877, price = 700}, 
+        {img = "17ee04f0861.png", x = 275 + 80 * 2, y = 105, scale = 1, id = 2825, price = 900}, 
+        {img = "17ee04c1063.png", x = 155, y = 165 + 60, scale = 0.7, id = 2801, price = 1100}, 
+        {img = "17ee04e2460.png", x = 218 + 80, y = 158 + 60, scale = 1, id = 2819, price = 1300}, 
+        {img = "17ee04cf463.png", x = 280 + 80 * 2, y = 160 + 60, scale = 1, id = 2832, price = 1500}, 
+        {img = "17ee04f5461.png", x = 135, y = 115, scale = 1, id = 2840, price = 1700}, 
+        {img = "17ee04fed61.png", x = 203 + 80, y = 95, scale = 1, id = 2829, price = 1900}, 
+        {img = "17ee04fa16d.png", x = 267  + 80 * 2, y = 110, scale = 1, id = 2841, price = 2100}, 
+        {img = "17ee050d162.png", x = 120, y = 150 + 60, scale = 0.85, id = 2837, price = 2300}
     },
     [4] = {
-        {img = "17ee0508560.png", x = 430, y = 135, scale = 0.7, id = 703, price = 32}, 
-        {img = "17ee051b563.png", x = 208 + 80, y = 140, scale = 0.7, id = 707, price = 33}, 
-        {img = "17ee0529961.png", x = -20  + 80 * 2, y = 140, scale = 0.7, id = 702, price = 34}, 
-        {img = "17ee0511d62.png", x = 135, y = 170 + 65, scale = 0.650, id = 705, price = 35}
+        {img = "17ee0508560.png", x = 430, y = 135, scale = 0.7, id = 703, price = 1000}, 
+        {img = "17ee051b563.png", x = 208 + 80, y = 140, scale = 0.7, id = 707, price = 1250}, 
+        {img = "17ee0529961.png", x = -20  + 80 * 2, y = 140, scale = 0.7, id = 702, price = 1500}, 
+        {img = "17ee0511d62.png", x = 135, y = 170 + 65, scale = 0.65, id = 705, price = 1750}
     }
 }
+
 
 eventNewPlayer = function(name)
     players[name] = {
@@ -79,7 +81,7 @@ eventKeyboard = function(name, key)
         displayShop(name)
     end
 end
-tfm.exec.newGame(1)
+
 eventPlayerWon = function(name)
     players[name].coinOrMap = players[name].coinOrMap + 100
 end
@@ -170,7 +172,7 @@ removeShop = function (name)
     for _, i in next, {'shopImg', 'shopCloseButton', 'shopBackgorundImg'} do
         tfm.exec.removeImage(players[name][i])
     end
-    for i in next, textAreaIds do    
+    for i in next, textAreaIds do
         ui.removeTextArea(textAreaIds[i], name)
     end
     for i = 1, #textAreaIds do
